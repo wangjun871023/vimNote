@@ -5,6 +5,7 @@ Plugin 'tpope/vim-fugitive'
     :Gstatus    :git status 会打开一个窗口显示当前git仓库的内容
         R  :  刷新
         -  :  删除/添加文件操作   git add  filename
+        
    
     
 
