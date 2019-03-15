@@ -1,0 +1,11 @@
+1. bufferline插件
+1.1 buffer使用技巧
+    :ls 可以查看当前已经打开的buffer list
+    :b num 可以切换到指定的buffer(num是buffer list中的编号)
+    :bn  buffer列表中的下一个buffer
+    :bp  buffer列表中的上一个buffer
+    :b#  buffer列表中的之前的一个buffer
+1.2 bufferline插件安装
+    Plugin 'bling/vim-bufferline'
+
+

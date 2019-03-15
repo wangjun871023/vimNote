@@ -1,0 +1,124 @@
+1 auto-pairs 插件
+1.1 安装
+Plugin 'jiangmiao/auto-pairs'
+1.2 使用
+(1) Insert in pair: >
+        input: [
+        output: [|]
+(2) Delete in pair: >
+        input: foo[<BS>]
+        output: foo
+(3) Insert new indented line after Return: >
+        input: {|} (press <CR> at |)
+        output: {
+            |
+        }
+(4) Insert spaces before closing characters, only for [], (), {}: >
+
+        input: {|} (press <SPACE> at |)
+        output: { | }
+
+        input: {|} (press <SPACE>foo} at |)
+        output: { foo }|
+
+        input: '|' (press <SPACE> at |)
+        output: ' |'
+
+(5) Skip ' when inside a word: >
+
+        input: foo| (press ' at |)
+        output: foo'
+    foo's
+(6) Skip closed bracket: >
+
+        input: []
+        output: []
+[]
+[[[[[]]]]]
+(7) Ignore auto pair when previous character is '\': >
+
+        input: "\'
+        output: "\'"
+"\'"
+(8) Fast Wrap: >
+
+        input: |'hello' (press (<M-e> at |)
+        output: ('hello')
+
+("Heloo fdsaf")
+    Wrap string, only support c style string.
+        input: |'h\\el\'lo' (press (<M-e> at |)
+        output ('h\\ello\'')
+
+        input: |[foo, bar()] (press (<M-e> at |)
+        output: ([foo, bar()])
+
+(9) Quick jump to closed pair: >
+
+        input:
+        {
+            something;|
+        }
+
+        (press } at |)
+
+        output:
+        {
+
+        }|
+
+(10) Support ```, ''' and """": >
+
+        input:
+            '''
+        output:
+            '''|'''
+
+(11) Delete Repeated Pairs in one time: >
+
+        input: """|""" (press <BS> at |)
+        output: |
+
+        input: {{|}} (press <BS> at |)
+        output: |
+
+        input: [[[[[[|]]]]]] (press <BS> at |)
+        output: |
+
+(12) Fly Mode (|autopairs-flymode|): >
+
+        input: if(a[3)
+        output: if(a[3])| (In Fly Mode)
+        output: if(a[3)]) (Without Fly Mode)
+if(a[3)])
+if(a[3])
+
+    let g:AutoPairsFlyMode = 1
+
+        input:
+        {
+            hello();|}
+            world();
+        }
+
+        (press } at |)
+
+        output:
+        {
+            hello();
+            world();
+        }|
+
+        (then press <M-b> at | to do backinsert)
+        output:
+        {
+            hello();}|
+            world();
+        }
+
+" AutoPairs配置
+let g:AutoPairsFlyMode = 1
+" let g:AutoPairsShortcutBackInsert = '<C-b>'
+" let g:AutoPairsShortcutFastWrap='<C-e>'
+
+

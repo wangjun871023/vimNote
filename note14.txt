@@ -1,0 +1,9 @@
+1 vim-css3-syntax 与 vim-coloresque 插件
+1.1 安装 
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'gorodinskiy/vim-coloresque'
+1.2 使用
+    vim-css3-syntax 对css的补充，对增加的css3所增加的属性的一种扩展；
+    vim-coloresque 插件： 可以对css支持颜色高亮显示的功能；
+    :set t_Co = 256
+

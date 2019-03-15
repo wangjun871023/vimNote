@@ -1,0 +1,28 @@
+1 vim-indent-guides与restore_view插件
+1.1 安装
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/restore_view.vim'
+1.2 使用
+(1) restore_view: 使用光标保留于上一次关闭文件的位置。
+(2) indent-guides: 在Vim中显示缩进对齐线。
+	:nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+.vimrc 配置需要：
+set tabstop=4
+set shiftwidth=4
+set expandtab
+let g:indent_guides_auto_colors = 1
+let g:indent_guides_guide_size = 1   "对齐线的宽度设置1
+let g:indent_guides_start_level = 2  "显示对齐线的缩进级别 
+let g:indent_guides_enable_on_vim_startup = 1  "Vim启动时启用插件
+
+abcdasdf
+        abcdasdf
+            abcdasdf
+                abcdasdf
+            abcdasdf
+                abcdsaf
+                fdasf
+                fdsa
+    abcdasdf
+
+

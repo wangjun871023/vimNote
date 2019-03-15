@@ -1,0 +1,12 @@
+1 HTML-AutocloseTag插件
+1.1 安装插件
+    Plugin 'heracek/HTML-AutoCloseTag'
+1.2 基本使用
+    <body id="foo">, upon typing > 
+    become <body id="foo">|</body> 
+    where | is the cursor
+1.3 例子
+<html>
+	<head></head>
+	<body></body>
+</html>

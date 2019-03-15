@@ -1,0 +1,58 @@
+1 tagbar插件
+1.1 安装 
+	Plugin 'majutsushi/tagbar'
+1.2 使用
+    tagbar插件是在vim界面一侧显示文件的标签的插件，比较文件的类，函数，变量等
+	(1) 基础操作
+	TagbarToggle  激活Tagbar插件
+	<F1>/?        打开帮助文档
+	<CR>/<Enter>  跳到定义位置
+	p             跳到定义位置，但是光标仍然在tagbar原位置
+	P             打开一个预览窗口显示标签内容，如果在标签处回车跳到Vim编辑页面内定义处，则预览窗口关闭
+	<LeftMouse>   鼠标操作
+	<C-N>         跳到下一个标签页的顶端
+	<C-P>         跳到上一个或当前标签页的顶端
+	<Space>       底行显示标签原型
+	v             显示/隐藏 非public标签
+	(2) 文件夹操作
+	+/zo          展开标签内容
+	-/zc          折叠标签内容
+	o/za          展开/折叠标签内容
+	*/zR          展开所有标签内容
+	=/zM          折叠所有标签内容
+	zr            展开下一层标签
+	zm            折叠上一层标签
+	zj            跳到下一个折叠的fold
+	zk            跳到上一个折叠的fold
+	(3) 其它
+	s             正序/倒序进行标签显示
+	c             开启大小写不敏感
+	x             放大/缩小显示窗口
+	q             关闭显示窗口
+
+
+   	
+1.3 例子
+public class Hello {
+	public static void main(String[] args){
+		String str = "Hello World";
+		System.out.println(str);
+	}
+	public static int add(int a,int b){
+		return a+b;
+	}
+	int sum (int a,int b){
+		return a + b;
+	}
+	class Inner {
+		public static void print(){
+			System.out.println("Print Fun");
+		}
+	
+	}
+}
+
+class Outer{
+
+}
+

@@ -1,0 +1,33 @@
+1 vim-multiple-cursors插件
+1.1 安装
+    Plugin 'terryma/vim-multiple-cursors'
+1.2 使用
+(1) normal mode
+    Ctrl + n: 激活插件，添加当前word的光标,并且选中下一个word
+    Ctrl + p: 取消选中一个word,并且退回到上一个word
+    Ctrl + x: 跳过当前选中的word
+备注： c/s/I/A 操作命令同时支持左右方向键的操作
+
+public int add(int values1,int value2){
+	values1 = values1 + 1;
+	values1 = values1 + 1;
+	value2 = value2 + 2;
+	value2 = value2 + 2;
+
+	return values1 + value2;
+}
+(2) visual mode
+    v 进行可视模式下
+    Ctrl + n: 激活插件，为选中的内容行添加光标操作
+    I "
+    -> "
+	String[] nums = ["one","two","three","four","five","six"];
+(3) Command mode
+    v 进行可视模式下,选中预操作的内容
+    : 进行命令模式
+    : arrage MultipleCursorsFind regexp  
+
+	<h1>H1</h1>
+	<h1>H2</h1>
+	<h1>H3</h1>
+

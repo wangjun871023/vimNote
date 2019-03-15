@@ -1,0 +1,32 @@
+1 vim-surround 与 vim-repeat插件
+1.1 安装
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+1.2 使用
+(1) vim-surround插件：结合文本对象组合使用能让更改成对的符号异常方便。
+    1 删除包围符号的命令：ds,后面加的字符表示要删除的符号：
+    Hello world    ds"
+    2 替换包括符号的命令：cs,命令后可以加两个参数，分别是被替换的符号和需要使用的符号：
+    [Hello world]  ds"]
+    3 添加包围符号的命令：ys(your surround) 
+    {Hello} world! ysiw}
+    4 在可视模式下，添加包围符号： v S
+     Hello {world!}  vwS}
+    5 yss命令：可以用于整行操作，包括忽略中间的空格
+     {Hello world!}  yss}
+    6 yS或ySS命令： 让包围的内容单独为一行并且加上缩进
+      ySS}  yS}}
+	{
+		Hel{
+			lo world!  VIM 
+		}
+	}
+    7 ysiw{  : 小技巧，左括号与右括号是不同的，左括号会增加一个空格，而右括号则不会，编码风格。
+	{ Hello } world!
+
+(2) vim-repeat:  重复一个插件的操作。 .命令
+	"Hello world!"
+	"Hello world!"
+	"Hello world!"
+	"Hello world!"
+

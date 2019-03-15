@@ -1,0 +1,42 @@
+1 CtrlP 插件
+1.1 安装 
+Plugin 'ctrlpvim/ctrlp.vim'
+1.2 使用
+    Ctrl插件： 在完全模糊路径中,寻找文件(file)，缓冲区(buf)，最近用过的文件(most recently used)等等。
+    <Ctrl+p> ：激活插件，Normal模式下
+    <F5> : 更新目录缓存
+    <Ctrl+f>/<Ctrl+b> : 在模式之间切换
+    <Ctrl+j>/<Ctrl+k> : 上下移动光标功能
+    <Ctrl+d> : 在完整路径匹配和文件名匹配之间进行切换操作
+    <Ctrl+r> : 在字符串模式和正则表达式模式之间进行切换操作
+    <Ctrl+t> : 在新的tab页中打开光标所在文件
+    <Ctrl+v> : 垂直分割打开文件
+    <Ctrl+x> : 水平分割打开文件
+    <Ctrl+p>/<Ctrl+n> : 选择历史记录
+    <Ctrl+y>  : 当文件不存在时创建文件及目录
+    <Ctrl+z>  : 标记/取消标记，目的是标记多个文件，使用<Ctrl+o>同时进行打开文件
+
+
+
+
+
+
+
+
+    
+
+    
+   
+    
+
+    
+
+
+
+
+
+
+
+
+
+

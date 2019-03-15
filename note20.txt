@@ -1,0 +1,14 @@
+1 vim-colors-solarized插件
+1.1 安装
+Plugin 'altercation/vim-colors-solarized'
+1.2 使用
+(1)基本配置
+syntax enable
+set background=dark
+colorscheme solarized
+(2) terminal配置
+let g:solarized_termcolors=256
+g:solarized_termtrans =   0
+g:solarized_contrast  =   "normal"
+g:solarized_visibility =  "normal"
+

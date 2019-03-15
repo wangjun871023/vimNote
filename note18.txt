@@ -1,0 +1,24 @@
+1 wildfire 插件
+1.1 安装
+Plugin 'gcmt/wildfire.vim'
+1.2 使用
+    功能：快速选择代码块 
+    操作对象: text-object  i'  i" i) i] i} ip it
+    选择命令：<Enter>
+    反向选择：<Backspace>
+1.3 例子
+<h1>{ aaa bbbb ccc [abcdfda sfdsaf (fdsafdsafd "dfadsf 'fdasfdsafdsf' fdasf" bcsadfdasf)]}</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

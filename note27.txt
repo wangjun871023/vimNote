@@ -1,0 +1,13 @@
+1 syntastic插件
+1.1 安装
+Plugin 'scrooloose/syntastic'
+1.2 使用
+    语法高亮: Vim中的一种插件可以不经过编译就可以显示语法错误。
+    :Errors
+相关配置信息
+" syntastic配置 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_jump = 1
+

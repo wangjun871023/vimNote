@@ -1,0 +1,28 @@
+1 litecorrect插件
+1.1 安装
+Plugin 'reedes/vim-litecorrect'
+1.2 配置 
+(1) .vimrc
+set nocompatible
+filetype plugin on       " may already be in your .vimrc
+augroup litecorrect
+    autocmd!
+    autocmd FileType markdown,mkd call litecorrect#init()
+    autocmd FileType textile call litecorrect#init()
+augroup END
+(2) user_dict
+let user_dict = {
+    \ 'maybe': ['mabye'],
+    \ 'medieval': ['medival', 'mediaeval', 'medevil'],
+    \ 'then': ['hten'],
+\ }
+augroup litecorrect
+autocmd!
+    autocmd FileType markdown call litecorrect#init(user_dict)
+    autocmd FileType textile call litecorrect#init(user_dict)
+augroup END
+
+
+
+
+

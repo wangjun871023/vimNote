@@ -1,0 +1,11 @@
+1 vim-over 插件
+1.1 安装
+Plugin 'osyo-manga/vim-over'
+1.2 使用
+:OverCommandLine 
+
+/pattern 
+%s/from/to/g
+%g/pattern/d
+
+
