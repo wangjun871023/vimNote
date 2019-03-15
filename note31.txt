@@ -1,0 +1,15 @@
+1 vim-fugitive插件
+1.1 安装
+Plugin 'tpope/vim-fugitive'
+1.2 使用
+    :Gstatus    :git status 会打开一个窗口显示当前git仓库的内容
+        R  :  刷新
+        -  :  删除/添加文件操作   git add  filename
+   
+    
+
+
+
+
+
+
